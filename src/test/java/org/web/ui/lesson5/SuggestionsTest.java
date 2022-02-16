@@ -36,7 +36,7 @@ public class SuggestionsTest extends TestBase{
 
     @Test
     @DisplayName("Проверка подсказок по ФИО")
-    void standardizationFullNameTest() {
+    void suggestionsFullNameTest() {
         getDriver().findElement(By.xpath(menuButtonSuggestions)).click();
         getDriver().findElement(By.xpath(tabsItemFullName)).click();
         getDriver().findElement(By.id(fullNameInput)).sendKeys("иванов иван иванович");
